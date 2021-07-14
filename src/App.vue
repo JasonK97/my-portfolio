@@ -1,5 +1,8 @@
 <template>
-  <app-header/>
+  <app-header v-if="!mobileView"/>
+  <div class="top-bar">
+    <navigation />
+  </div>
   <router-view/>
   <!-- <app-footer/> -->
 </template>
@@ -7,14 +10,19 @@
 <script>
 import AppHeader from '@/components/AppHeader.vue'
 // import AppFooter from '@/components/AppFooter.vue'
+import Navigation from '@/components/Navigation.vue'
 
 export default {
   components: {
-    AppHeader
-    // AppFooter
+    AppHeader,
+    // AppFooter,
+    Navigation
   },
   data () {
-    return {}
+    return {
+      mobileView: false,
+      showNav: false
+    }
   }
 }
 </script>
@@ -34,7 +42,7 @@ body {
 
 #nav {
   padding: 30px;
-  margin-left: auto;
+  // margin-left: auto;
   margin-right: auto;
 
   a {
@@ -52,6 +60,10 @@ body {
     color: #07e6a3;
   }
 }
+
+// #mobileNav {
+//   display: none;
+// }
 
 .icons {
   margin-left: auto;
