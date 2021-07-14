@@ -1,7 +1,7 @@
 <template>
   <div class="fade-in">
     <h1 class="title-projects">Learning Experience Projects</h1>
-    <div class="info-1">
+    <div class="info-right">
       <a href="https://www.allucent.io/" target="_blank"><img class="allucent-logo" alt="allucent logo" src="@/assets/allucent-logo.png"/></a>
       <p class="p-content-right">
         Undergrad internship with allucent. Web Development in Vue.js, <br />
@@ -11,7 +11,7 @@
         share training tips during planning sessions.
       </p>
     </div>
-    <div class="info-2">
+    <div class="info-left">
       <p class="p-content-left">
         Nature Calls is an Android Application built in Java using Android Studio. <br />
         This was a collaborative project with a Firebase backend looking to help <br />
@@ -20,7 +20,7 @@
       </p>
       <img class="nature-calls" alt="Nature Calls logo" src="@/assets/nature-calls.png"/>
     </div>
-    <div class="info-1">
+    <div class="info-right">
       <a href="https://willits-alec.github.io/FinalProject/index.html" target="_blank"><img class="chess-logo" alt="chess logo" src="@/assets/chess.png"/></a>
       <p class="p-content-right">
         RIP Flash Games was another collaborative project, it's a website featuring <br />
