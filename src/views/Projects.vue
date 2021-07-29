@@ -6,7 +6,7 @@
         <a href="https://www.allucent.io/" target="_blank"><img class="allucent-logo-mobile" alt="allucent logo" src="@/assets/allucent-logo.png"/></a>
         <p class="mobile-content">
           Undergrad 14-week internship with allucent. Web Development in
-          Vue.js, Firebase, and Tailwind.css. Jason helped implement a
+          Vue.js, Firebase, and Tailwind.css. I helped implement a
           Training page for allucent users to learn how to use their Web
           Application. Also, a dynamic table has been introduced for company
           admins to share training tips during planning sessions.
@@ -53,7 +53,7 @@
         <a href="https://www.allucent.io/" target="_blank"><img class="allucent-logo" alt="allucent logo" src="@/assets/allucent-logo.png"/></a>
         <p class="p-content-right">
           Undergrad 14-week internship with allucent. Web Development in <br />
-          Vue.js, Firebase, and Tailwind.css. Jason helped implement a <br />
+          Vue.js, Firebase, and Tailwind.css. I helped implement a <br />
           Training page for allucent users to learn how to use their Web <br />
           Application. Also, a dynamic table has been introduced for company <br />
           admins to share training tips during planning sessions.

@@ -54,7 +54,7 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #c2ffeb;
+  color: #dadada;
 }
 
 body {
@@ -124,7 +124,7 @@ body {
   position: absolute;
   height: 9px;
   width: 100%;
-  background: #ffffff;
+  background: #dadada;
   border-radius: 9px;
   opacity: 1;
   left: 0;
