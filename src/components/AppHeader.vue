@@ -5,7 +5,7 @@
       <router-link to="/about">About</router-link> |
       <router-link to="/projects">Projects</router-link> |
       <router-link to="/specialties">Specialties</router-link> |
-      <a href="https://discord.gg/ENs9zjrpe2" target="_blank">Discord</a>
+      <a href="https://discord.gg/ENs9zjrpe2" target="_blank">Join my Discord</a>
     </div>
     <div class="icons">
       <div class="github" @mouseover="hoverOverIconGithub" @mouseleave="endHoverOverIconGithub">
@@ -15,6 +15,10 @@
       <div class="linkedin" @mouseover="hoverOverIconLinkedin" @mouseleave="endHoverOverIconLinkedin">
         <a v-if="hoveringLinkedin" href="https://www.linkedin.com/in/jasonbkent/" target="_blank"><img alt="linkedin icon" src="@/assets/linkedin-hover.png" /></a>
         <a v-else href="https://www.linkedin.com/in/jasonbkent/" target="_blank"><img alt="linkedin icon" src="@/assets/linkedin.png" /></a>
+      </div>
+      <div class="twitter" @mouseover="hoverOverIconTwitter" @mouseleave="endHoverOverIconTwitter">
+        <a v-if="hoveringTwitter" href="https://twitter.com/JasonKent_" target="_blank"><img alt="twitter icon" src="@/assets/twitter-hover.png" /></a>
+        <a v-else href="https://twitter.com/JasonKent_" target="_blank"><img alt="twitter icon" src="@/assets/twitter.png" /></a>
       </div>
     </div>
   </header>
@@ -27,6 +31,7 @@ export default {
       hoveringMe: false,
       hoveringGithub: false,
       hoveringLinkedin: false,
+      hoveringTwitter: false,
       showMobileMenu: false
     }
   },
@@ -42,6 +47,12 @@ export default {
     },
     endHoverOverIconLinkedin () {
       this.hoveringLinkedin = false
+    },
+    hoverOverIconTwitter () {
+      this.hoveringTwitter = true
+    },
+    endHoverOverIconTwitter () {
+      this.hoveringTwitter = false
     }
   }
 }

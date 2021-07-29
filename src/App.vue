@@ -3,7 +3,13 @@
   <div class="slide" :class="{'open':showNav}">
     <div class="top-bar">
       <div class="navigation-icon" v-if="mobileView" @click="showNav = !showNav">
-        <img id="hamburger" src="@/assets/menu.png" alt="menu icon" />
+        <!-- <img id="hamburger" src="@/assets/menu.png" alt="menu icon" /> -->
+        <div id="nav-icon3" :class="{'change':showNav}">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
       <app-header v-if="!mobileView"/>
       <router-view/>
@@ -97,6 +103,79 @@ body {
   }
 }
 
+#nav-icon3 {
+  width: 60px;
+  height: 45px;
+  position: relative;
+  margin: 25px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon3 span {
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-icon3 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
+  top: 18px;
+}
+
+#nav-icon3 span:nth-child(4) {
+  top: 36px;
+}
+
+#nav-icon3.change span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+#nav-icon3.change span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon3.change span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav-icon3.change span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
 .icons {
   margin-left: auto;
   display: flex;
@@ -130,6 +209,7 @@ header img {
 
 #hamburger {
   padding-left: 20px;
+  cursor: pointer;
 }
 
 .slide {
@@ -193,6 +273,11 @@ header img {
   width: 400px;
 }
 
+.mobile-content {
+  text-align: center;
+  font-weight: bold;
+}
+
 .p-content {
   font-weight: bold;
   line-height: 1.6;
@@ -215,12 +300,15 @@ header img {
 }
 
 .info-right {
+  margin-top: auto;
+  margin-bottom: auto;
   display: flex;
   justify-content: center;
 }
 
 .info-left {
-  margin-top: 45px;
+  margin-top: auto;
+  margin-bottom: auto;
   display: flex;
   justify-content: center;
 }
@@ -233,6 +321,18 @@ header img {
   height: 50px;
   width: auto;
   margin-top: 55px;
+}
+
+.bullet-heads {
+  height: 250px;
+  width: auto;
+  border-radius: 20px;
+}
+
+.mtmmusic-logo {
+  height: 250px;
+  width: auto;
+  border-radius: 300px;
 }
 
 .nature-calls {
@@ -256,6 +356,19 @@ header img {
 }
 
 @media (max-width: 990px) {
+  #app {
+    font-size: 24px;
+    p {
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+  }
+
+  .allucent-logo-mobile {
+    height: 50px;
+    width: auto;
+  }
+
   .info-right {
     display: flex;
   }

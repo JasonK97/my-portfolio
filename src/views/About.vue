@@ -11,6 +11,9 @@
       Jason will be graduating in December of 2021, and will be searching for Full-time employment opportunities. <br />
     </p>
   </div>
+  <!-- <div class="dev-card">
+    <a href="https://app.daily.dev/JKent97"><img src="https://api.daily.dev/devcards/9258eff652d0480b8de2fffc971b1277.png?r=1ty" width="400" alt="Jason Kent's Dev Card"/></a>
+  </div> -->
 </template>
 
 <style lang="scss"></style>
