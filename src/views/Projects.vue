@@ -3,6 +3,12 @@
     <h1 class="title-projects">Learning Experience Projects</h1>
     <div class="mobile-projects" v-if="mobileView">
       <div><hr /><br /><br />
+        <a href="https://shop.leisuretimeinc.com/" target="_blank"><img class="chess-logo" alt="Leisure Time Inc. logo" src="@/assets/download.png"/></a>
+        <p class="mobile-content">
+          Leisure Time Inc. is a company that sells all things relaxing. From Hot Tubs <br />
+          to Grills, and Fireplaces to Stoves for heating your home. I am working on the <br />
+          new website for Leisure Time Inc. using React.js, GraphQL, Prismic, and Shopify. <br />
+        </p><br /><hr /><br />
         <a href="https://www.allucent.io/" target="_blank"><img class="allucent-logo-mobile" alt="allucent logo" src="@/assets/allucent-logo.png"/></a>
         <p class="mobile-content">
           Undergrad 14-week internship with allucent. Web Development in
@@ -39,16 +45,17 @@
           to use a nasty bathroom while on-campus.
         </p><br /><hr /><br />
       </div>
-      <div>
-        <a href="https://willits-alec.github.io/FinalProject/index.html" target="_blank"><img class="chess-logo" alt="chess logo" src="@/assets/chess.png"/></a>
-        <p class="mobile-content">
-          RIP Flash Games was another collaborative project, it's a website featuring
-          three classic games, written in vanilla JavaScript. Chess, Checkers, and Frogger!
-        </p>
-      </div>
     </div>
     <!-----------------Desktop View----------------->
     <div class="desktop-projects" v-else>
+      <div class="info-left">
+        <p class="p-content-right">
+          Leisure Time Inc. is a company that sells all things relaxing. From Hot Tubs <br />
+          to Grills, and Fireplaces to Stoves for heating your home. I am working on the <br />
+          new website for Leisure Time Inc. using React.js, GraphQL, Prismic, and Shopify. <br />
+        </p>
+        <a href="https://shop.leisuretimeinc.com/" target="_blank"><img class="chess-logo" alt="Leisure Time Inc. logo" src="@/assets/download.png"/></a>
+      </div>
       <div class="info-right">
         <a href="https://www.allucent.io/" target="_blank"><img class="allucent-logo" alt="allucent logo" src="@/assets/allucent-logo.png"/></a>
         <p class="p-content-right">
@@ -85,13 +92,6 @@
           to use a nasty bathroom while on-campus.
         </p>
         <a href="https://github.com/JasonK97/Java-App" target="_blank"><img class="nature-calls" alt="Nature Calls logo" src="@/assets/nature-calls.png"/></a>
-      </div>
-      <div class="info-right">
-        <a href="https://willits-alec.github.io/FinalProject/index.html" target="_blank"><img class="chess-logo" alt="chess logo" src="@/assets/chess.png"/></a>
-        <p class="p-content-right">
-          RIP Flash Games was another collaborative project, it's a website featuring <br />
-          three classic games, written in vanilla JavaScript. Chess, Checkers, and Frogger! <br />
-        </p>
       </div>
     </div>
   </div>

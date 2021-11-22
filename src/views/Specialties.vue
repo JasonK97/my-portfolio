@@ -6,6 +6,6 @@
     <img class="logos" alt="SQL Logo" src="@/assets/sql-server.png"/>
     <img class="logos" alt="Vue Logo" src="@/assets/logo.png"/>
     <img class="logos" alt="Python Logo" src="@/assets/python-language-logotype.png"/>
-    <img class="logos" alt="Andoid Logo" src="@/assets/android.png"/>
+    <img class="logos" alt="React Logo" src="@/assets/React-icon.svg"/>
   </div>
 </template>
