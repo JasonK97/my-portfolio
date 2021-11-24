@@ -3,7 +3,7 @@
     <h1 class="title-projects">Learning Experience Projects</h1>
     <div class="mobile-projects" v-if="mobileView">
       <div><hr /><br /><br />
-        <a href="https://shop.leisuretimeinc.com/" target="_blank"><img class="chess-logo" alt="Leisure Time Inc. logo" src="@/assets/download.png"/></a>
+        <a href="https://shop.leisuretimeinc.com/" target="_blank"><img class="lti-logo" alt="Leisure Time Inc. logo" src="@/assets/download.png"/></a>
         <p class="mobile-content">
           Leisure Time Inc. is a company that sells all things relaxing. From Hot Tubs <br />
           to Grills, and Fireplaces to Stoves for heating your home. I am working on the <br />
@@ -43,18 +43,18 @@
           This was a collaborative project with a Firebase backend looking to help
           students on the BYU-Idaho campus rate restrooms so that no one needs
           to use a nasty bathroom while on-campus.
-        </p><br /><hr /><br />
+        </p><br />
       </div>
     </div>
     <!-----------------Desktop View----------------->
     <div class="desktop-projects" v-else>
       <div class="info-left">
-        <p class="p-content-right">
+        <p class="p-content-left">
           Leisure Time Inc. is a company that sells all things relaxing. From Hot Tubs <br />
           to Grills, and Fireplaces to Stoves for heating your home. I am working on the <br />
           new website for Leisure Time Inc. using React.js, GraphQL, Prismic, and Shopify. <br />
         </p>
-        <a href="https://shop.leisuretimeinc.com/" target="_blank"><img class="chess-logo" alt="Leisure Time Inc. logo" src="@/assets/download.png"/></a>
+        <a href="https://shop.leisuretimeinc.com/" target="_blank"><img class="lti-logo" alt="Leisure Time Inc. logo" src="@/assets/download.png"/></a>
       </div>
       <div class="info-right">
         <a href="https://www.allucent.io/" target="_blank"><img class="allucent-logo" alt="allucent logo" src="@/assets/allucent-logo.png"/></a>

@@ -341,9 +341,10 @@ header img {
   border-radius: 20px;
 }
 
-.chess-logo {
-  height: 150px;
+.lti-logo {
+  height: 200px;
   width: auto;
+  border-radius: 20px;
 }
 
 .logos {
